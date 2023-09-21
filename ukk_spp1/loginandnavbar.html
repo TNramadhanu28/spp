@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Dropdown</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Style dasar navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 47, 47);
+            padding: 10px;
+        }
+
+        /* Style navbar link */
+        .navbar a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Style dropdown container */
+        .dropdown {
+            position: relative;
+        }
+
+        /* Style dropdown link */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+        }
+
+        /* Style dropdown content (default is hidden) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Style dropdown links */
+        .dropdown-content a {
+            color: rgb(178, 63, 63);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Style on hover for dropdown links */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu when hovering over the dropdown container */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Tambahkan margin kiri pada elemen Menu */
+        .menu .dropbtn {
+            margin-left: 20px;
+            /* Ubah margin menjadi 20px */
+        }
+
+        /* Style input search */
+        .search-input {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        /* Style tombol Login */
+        .login button {
+            border: none;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Media query untuk tampilan responsif */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: row;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="login">
+            <input type="search" class="search-input" placeholder="Search">
+            <i class="material-icons">search</i>
+            <a href="#"><button>Login</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 1;
+            list-style: circle;
+            text-decoration: none;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #444;
+            color: #fff;
+            width: 180px;
+            padding: 20px;
+            line-height: 100%;
+        }
+
+        .sidebar header {
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: #444;
+            user-select: none;
+        }
+
+        .sidebar ul a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 15px;
+            color: white;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
+
+        ul li:hover a {
+            padding-left: 50px;
+        }
+
+        .sidebar ul a i {
+            margin-right: 16px;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .widget {
+            background-color: #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="smk4.png" alt="" width="50px">
+        <h1>Pembayaran SPP</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <header align="center">ADMIN</header>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">DATA SISWA</a></li>
+                <li><a href="#">PEMBAYARAN</a></li>
+                <li><a href="#">PEMBAYARAN</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 align="center">Content</h2>
+            <div class="widget">
+
+                <h3>BAYAR SPP</h3>
+                <p>Isi dari Widget 1.</p>
+            </div>
+            <div class="widget">
+                <h3>Widget 2</h3>
+                <p>Isi dari Widget 2.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
